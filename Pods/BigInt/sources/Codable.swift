@@ -16,7 +16,7 @@ where Words.Element: FixedWidthInteger, Words.Index == Int {
         precondition(Word.bitWidth % Unit.bitWidth == 0 || Unit.bitWidth % Word.bitWidth == 0)
         self.words = words
     }
-    var count: Int { return (words.count * Word.bitWidth + Unit.bitWidth - 1) / Unit.bitWidth }
+//    var count: Int { return (words.count * Word.bitWidth + Unit.bitWidth - 1) / Unit.bitWidth }
     var startIndex: Int { return 0 }
     var endIndex: Int { return count }
     subscript(_ index: Int) -> Unit {

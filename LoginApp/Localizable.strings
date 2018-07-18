@@ -1,0 +1,164 @@
+/* 
+  Localizable.strings
+  LoginApp
+
+  Created by Quan Pham Van on 7/18/18.
+  Copyright © 2018 QuanPV. All rights reserved.
+*/
+
+// Global
+
+"global.next" = "Next";
+
+// Loading
+
+"loading.button.title.retry" = "Retry";
+
+// Login
+"login.error.validation.email" = "Invalid email";
+"login.error.validation.password" = "Password should be at least 6 characters long";
+"login.text_field.placeholder.email" = "Email";
+"login.text_field.placeholder.password" = "Password";
+"login.button.title.login" = "Log in";
+"login.button.title.register" = "Don't have an account yet? Register";
+
+// Register
+"register.view.title" = "Register";
+"register.text_field.placeholder.first_name" = "First name";
+"register.text_field.placeholder.last_name" = "Last name";
+"register.text_field.placeholder.email" = "Email";
+"register.text_field.placeholder.password" = "Password";
+"register.button.title.register" = "Register";
+"register.button.title.close" = "Close";
+"register.error.validation.first_name" = "First name is required";
+"register.error.validation.last_name" = "Last name is required";
+"register.error.validation.email" = "Invalid email";
+"register.error.validation.password" = "Password should be at least 6 characters long";
+
+// Product list
+
+"product_list.view.title" = "Products";
+"product_list.button.title.logout" = "Log out";
+
+// Checkout
+
+"checkout.view.title" = "Checkout";
+"checkout.label.your_product" = "Your product";
+"checkout.label.summary" = "Summary";
+"checkout.label.sub_total" = "Sub total";
+"checkout.label.discount" = "Discount";
+"checkout.label.total" = "Total";
+"checkout.button.title.redeem.redeem" = "Redeem";
+"checkout.button.title.redeem.no_balance" = "No balance available";
+"checkout.button.title.redeem.loading" = "Loading...";
+"checkout.button.title.pay" = "Pay";
+"checkout.message.pay_success" = "Successfully bought";
+
+// Redeem popup
+
+"popup.redeem.label.title.redeem" = "Redeem";
+"popup.redeem.label.title.coins" = "coins";
+"popup.redeem.you_have" = "You have";
+"popup.redeem.to_redeem" = "to redeem";
+"popup.redeem.get_discount" = "Get discount";
+"popup.redeem.redeem" = "Redeem";
+"popup.redeem.button.title.cancel" = "Cancel";
+"popup.redeem.button.title.redeem" = "Redeem";
+
+// Profile
+
+"profile.view.title" = "My profile";
+"profile.button.title.logout" = "Log out";
+"profile.button.title.close" = "Close";
+"profile.button.title.history" = "History";
+"profile.label.token" = "Token";
+"profile.label.amount" = "Amount";
+"profile.lable.selected" = "Selected";
+
+// Generate Or Scan
+
+"generate_or_scan.title" = "QR Code";
+"generate_or_scan.button.title.cancel" = "Cancel";
+"generate_or_scan.button.title.generate" = "Generate QR Code";
+"generate_or_scan.button.title.scan" = "Scan QR Code";
+
+// TRequest generator
+
+"trequest_generator.title" = "Generate transaction";
+"trequest_generator.label.i_want_to" = "I want to:";
+"trequest_generator.label.send" = "Send";
+"trequest_generator.label.receive" = "Receive";
+"trequest_generator.label.token" = "Token:";
+"trequest_generator.label.amount" = "Amount (optional):";
+"trequest_generator.label.address" = "Address (optional):";
+"trequest_generator.label.correlation_id" = "Correlation id (optional):";
+"trequest_generator.label.requires_confirmation" = "Requires confirmation:";
+"trequest_generator.label.max_consumptions" = "Max consumptions (optional):";
+"trequest_generator.label.max_consumptions_per_user" = "Max consumptions per user (optional):";
+"trequest_generator.label.consumption_lifetime" = "Consumption lifetime in ms (optional):";
+"trequest_generator.label.expiration_date" = "Expiration date: (optional)";
+"trequest_generator.label.allow_amount_override" = "Allow amount override:";
+"trequest_generator.button.title.generate" = "Generate";
+"trequest_generator.error.missing_amount" = "Amount needs to be inputed or 'allow amount override' needs to be enabled";
+"transaction_consumer.message.waiting_for_confirmation" = "Waiting for confirmation";
+
+// TRequest consumer
+
+"trequest_consumer.title" = "Consume request";
+"trequest_consumer.button.title.consume" = "Consume";
+"trequest_consumer.label.token" = "Token:";
+"trequest_consumer.label.amount" = "Amount:";
+"trequest_consumer.label.address" = "Address (optional):";
+"trequest_consumer.label.correlation_id" = "Correlation id (optional):";
+"trequest_consumer.label.expiration_date" = "Expiration date: (optional)";
+"trequest_consumer.message.successfully" = "Successfully";
+"trequest_consumer.message.sent" = "sent";
+"trequest_consumer.message.received" = "received";
+"trequest_consumer.message.to" = "to";
+"trequest_consumer.message.from" = "from";
+"trequest_consumer.error.consumption_rejected" = "Your transaction has been rejected by the requester";
+"trequest_consumer.label.send_to" = "Send to:";
+"trequest_consumer.label.receive_from" = "Receive from:";
+"trequest_consumer.error.transaction_failed" = "Transaction failed to process";
+"trequest_consumer.error.transaction_expired" = "Transaction expired";
+
+// QRCode viewer
+
+"qrcode_viewer.alert.consumption_request.title" = "Consumption Request";
+"qrcode_viewer.message.successfully_approved" = "Transaction completed";
+"qrcode_viewer.message.successfully_rejected" = "Successfully rejected the transaction";
+"qrcode_viewer.message.successfully" = "Successfully";
+"qrcode_viewer.message.sent" = "sent";
+"qrcode_viewer.message.received" = "received";
+"qrcode_viewer.message.to" = "to";
+"qrcode_viewer.message.from" = "from";
+"qrcode_viewer.error.transaction_failed" = "Transaction failed to process";
+"qrcode_viewer.label.status.approved" = "Approved";
+"qrcode_viewer.label.status.confirmed" = "Confirmed";
+"qrcode_viewer.label.status.expired" = "Expired";
+"qrcode_viewer.label.status.failed" = "Failed";
+"qrcode_viewer.label.status.pending" = "Pending";
+"qrcode_viewer.label.status.rejected" = "Rejected";
+"qrcode_viewer.label.consumption_requests" = "Consumption requests:";
+
+// QRCode generator
+
+"qr_code_generator.text_field.placeholder.amount" = "Amount";
+"qr_code_generator.button.title.generate.disable" = "Loading";
+
+// Transactions
+
+"transactions.view.title" = "Transaction history";
+"transactions.label.to" = "To";
+"transactions.label.from" = "From";
+"transactions.label.my_address" = "My address:";
+"transactions.label.status.approved" = "Approved";
+"transactions.label.status.confirmed" = "Confirmed";
+"transactions.label.status.expired" = "Expired";
+"transactions.label.status.failed" = "Failed";
+"transactions.label.status.pending" = "Pending";
+"transactions.label.status.rejected" = "Rejected";
+
+// Global Errors
+"error.missing_required_fields" = "Missing required fields";
+"error.unexpected" = "An unexpected error has occured";

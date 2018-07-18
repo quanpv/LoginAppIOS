@@ -13,7 +13,7 @@ extension SipHasher {
     ///
     /// - Requires: `finalize()` hasn't been called on this instance yet.
     public mutating func append(_ slice: Slice<UnsafeRawBufferPointer>) {
-        self.append(UnsafeRawBufferPointer(rebasing: slice))
+      //  self.append(UnsafeRawBufferPointer(rebasing: slice))
     }
     
     //MARK: Appending Integers
