@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import TPKeyboardAvoiding
 
 class LoginViewController: BaseViewController {
 
+    @IBOutlet var passwordTF: OMGFloatingTextField!
+    @IBOutlet var emailTF: OMGFloatingTextField!
+    @IBOutlet var scrollView: TPKeyboardAvoidingScrollView!
+    @IBOutlet var loginBtn: UIButton!
+    @IBOutlet var registerBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +29,10 @@ class LoginViewController: BaseViewController {
     }
     
 
+    @IBAction func tapLoginBtn(_ sender: UIButton) {
+        print("login btn clicked")
+        emailTF?.text = "quanpv.hut@gmail.com"
+    }
     /*
     // MARK: - Navigation
 
