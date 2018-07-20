@@ -120,6 +120,9 @@
                                 <state key="normal" title="Don't have an account">
                                     <color key="titleColor" red="0.13658942830000001" green="0.32037645139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="7mO-Hx-O5t" kind="presentation" id="8kN-8p-CnC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -147,6 +150,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4y-aw-ANB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-402.39999999999998" y="127.28635682158921"/>
+        </scene>
+        <!--Register-->
+        <scene sceneID="eo6-qd-Ygg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Register" id="7mO-Hx-O5t" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PU1-eB-dIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="435" y="67"/>
         </scene>
     </scenes>
     <resources>
