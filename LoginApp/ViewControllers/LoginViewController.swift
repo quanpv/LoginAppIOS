@@ -19,8 +19,10 @@ class LoginViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        emailTF.delegate = self
+        passwordTF.delegate = self
         // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,9 +32,14 @@ class LoginViewController: BaseViewController {
     
 
     @IBAction func tapLoginBtn(_ sender: UIButton) {
-        print("login btn clicked")
+        let text: String = (emailTF?.text?.description)!
+        print("login btn clicked:\(text)")
         emailTF?.text = "quanpv.hut@gmail.com"
+        
     }
+    
+    
+    
     /*
     // MARK: - Navigation
 
@@ -44,3 +51,39 @@ class LoginViewController: BaseViewController {
     */
 
 }
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if !self.scrollView.tpKeyboardAvoiding_focusNextTextField() {
+            textField.resignFirstResponder()
+            //            self.viewModel.login()
+        }
+        return true
+    }
+    
+    func textField(_ textField: UITextField,
+                   shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) -> Bool {
+        let textFieldText: NSString = (textField.text ?? "") as NSString
+        let textAfterUpdate = textFieldText.replacingCharacters(in: range, with: string)
+        switch textField {
+        case self.emailTF: print("email1:\(textAfterUpdate)")
+        case self.passwordTF: print("password1:\(textAfterUpdate)")
+            //        case self.emailTF: self.viewModel.email = textAfterUpdate
+        //        case self.passwordTF self.viewModel.password = textAfterUpdate
+        default: break
+        }
+        return true
+    }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        switch textField {
+            //        case self.emailTextField: self.viewModel.email = ""
+        //        case self.passwordTextField: self.viewModel.password = ""
+        default: break
+        }
+        return true
+    }
+}
+
+
+
