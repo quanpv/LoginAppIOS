@@ -8,6 +8,7 @@
 
 import UIKit
 import TPKeyboardAvoiding
+import Alamofire
 
 class LoginViewController: BaseViewController {
 
@@ -35,10 +36,29 @@ class LoginViewController: BaseViewController {
         let text: String = (emailTF?.text?.description)!
         print("login btn clicked:\(text)")
         emailTF?.text = "quanpv.hut@gmail.com"
-        
+        requestHttp("https://api.github.com/users/quanpv");
     }
     
-    
+    func requestHttp(_ url:String) {
+        Alamofire.request(url).responseData() {
+            data in
+            switch data.result {
+            case let .success(data):
+                do {
+                     let jsonDecoder = JSONDecoder()
+                    let gitData = try jsonDecoder.decode(MyGitHub.self, from: data)
+                    print(gitData.name ?? "--")
+                    print("Repo:\(gitData.repos ?? 0)")
+                     print("Location:\(gitData.location ?? "NULL")")
+                } catch let error {
+                    print(error.localizedDescription)
+                }
+            case let .failure(error):
+                 print(error.localizedDescription)
+                
+            }
+        }
+    }
     
     /*
     // MARK: - Navigation

@@ -36,6 +36,7 @@
 		CC1CEE4B20FF3397008991E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEE4A20FF3397008991E1 /* LoginViewController.swift */; };
 		CC1CEE4F21009B32008991E1 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1CEE4E21009B32008991E1 /* Register.storyboard */; };
 		CC1CEE512101978B008991E1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEE502101978B008991E1 /* RegisterViewController.swift */; };
+		CE6B6A8721078AEC0024C715 /* MyGithub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B6A8621078AEC0024C715 /* MyGithub.swift */; };
 		D346ECE2AC8A629480762852 /* Pods_LoginApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092ED97C66D7F2329F6056DD /* Pods_LoginApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +97,7 @@
 		CC1CEE4A20FF3397008991E1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CC1CEE4E21009B32008991E1 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		CC1CEE502101978B008991E1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CE6B6A8621078AEC0024C715 /* MyGithub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGithub.swift; sourceTree = "<group>"; };
 		D249684256C333F91E3EAB07 /* Pods_LoginAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDEABAF200B85092C699FE79 /* Pods_LoginAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6B58959218B4745D94E2B7 /* Pods-LoginAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginAppTests/Pods-LoginAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 				CC1CEE2E20FEFCC3008991E1 /* Product.swift */,
 				CC1CEE2F20FEFCC3008991E1 /* Protocol.swift */,
 				CC1CEE3020FEFCC3008991E1 /* SessionToken.swift */,
+				CE6B6A8621078AEC0024C715 /* MyGithub.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 				CC1CEDEB20FDF48B008991E1 /* ViewController.swift in Sources */,
 				CC1CEDE920FDF48A008991E1 /* AppDelegate.swift in Sources */,
 				CC1CEE4520FEFD37008991E1 /* APIError.swift in Sources */,
+				CE6B6A8721078AEC0024C715 /* MyGithub.swift in Sources */,
 				CC1CEE4320FEFD37008991E1 /* JSONResponse.swift in Sources */,
 				CC1CEE3620FEFCC3008991E1 /* SessionToken.swift in Sources */,
 				CC1CEE3220FEFCC3008991E1 /* OMGError.swift in Sources */,
