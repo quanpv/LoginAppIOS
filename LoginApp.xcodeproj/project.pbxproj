@@ -36,6 +36,14 @@
 		CC1CEE4B20FF3397008991E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEE4A20FF3397008991E1 /* LoginViewController.swift */; };
 		CC1CEE4F21009B32008991E1 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1CEE4E21009B32008991E1 /* Register.storyboard */; };
 		CC1CEE512101978B008991E1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEE502101978B008991E1 /* RegisterViewController.swift */; };
+		CC6D40BA21082E82009B822A /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D40B921082E82009B822A /* APIController.swift */; };
+		CC6D40BF210987B2009B822A /* BuyForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D40BC210987B2009B822A /* BuyForm.swift */; };
+		CC6D40C0210987B2009B822A /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D40BD210987B2009B822A /* LoginForm.swift */; };
+		CC6D40C1210987B2009B822A /* RegisterForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D40BE210987B2009B822A /* RegisterForm.swift */; };
+		CC6D40C3210988DB009B822A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D40C2210988DB009B822A /* Router.swift */; };
+		CC6D40C621098913009B822A /* ProductAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D40C421098913009B822A /* ProductAPI.swift */; };
+		CC6D40C721098913009B822A /* SessionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D40C521098913009B822A /* SessionAPI.swift */; };
+		CC6D40C92109C25E009B822A /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D40C82109C25E009B822A /* SessionManager.swift */; };
 		CE6B6A8721078AEC0024C715 /* MyGithub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B6A8621078AEC0024C715 /* MyGithub.swift */; };
 		D346ECE2AC8A629480762852 /* Pods_LoginApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092ED97C66D7F2329F6056DD /* Pods_LoginApp.framework */; };
 /* End PBXBuildFile section */
@@ -97,6 +105,14 @@
 		CC1CEE4A20FF3397008991E1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CC1CEE4E21009B32008991E1 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		CC1CEE502101978B008991E1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CC6D40B921082E82009B822A /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		CC6D40BC210987B2009B822A /* BuyForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyForm.swift; sourceTree = "<group>"; };
+		CC6D40BD210987B2009B822A /* LoginForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
+		CC6D40BE210987B2009B822A /* RegisterForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterForm.swift; sourceTree = "<group>"; };
+		CC6D40C2210988DB009B822A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		CC6D40C421098913009B822A /* ProductAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductAPI.swift; sourceTree = "<group>"; };
+		CC6D40C521098913009B822A /* SessionAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionAPI.swift; sourceTree = "<group>"; };
+		CC6D40C82109C25E009B822A /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		CE6B6A8621078AEC0024C715 /* MyGithub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGithub.swift; sourceTree = "<group>"; };
 		D249684256C333F91E3EAB07 /* Pods_LoginAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDEABAF200B85092C699FE79 /* Pods_LoginAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +192,7 @@
 				CC1CEE1920FDFE91008991E1 /* ViewControllers */,
 				CC1CEE1E20FEF4B1008991E1 /* Managers */,
 				CC1CEE2A20FEFCB4008991E1 /* Models */,
+				CC6D40BB2109878D009B822A /* Forms */,
 				CC1CEDEA20FDF48B008991E1 /* ViewController.swift */,
 				CC1CEDEC20FDF48B008991E1 /* Main.storyboard */,
 				CC1CEDF220FDF48B008991E1 /* Assets.xcassets */,
@@ -225,6 +242,7 @@
 			children = (
 				CC1CEE3820FEFD01008991E1 /* Models */,
 				CC1CEE3720FEFCF7008991E1 /* Routers */,
+				CC6D40B921082E82009B822A /* APIController.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -232,6 +250,7 @@
 		CC1CEE1E20FEF4B1008991E1 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				CC6D40C82109C25E009B822A /* SessionManager.swift */,
 				CC1CEE1F20FEF548008991E1 /* Constant.swift */,
 				CC1CEE2020FEF548008991E1 /* Theme.swift */,
 			);
@@ -264,6 +283,7 @@
 		CC1CEE3720FEFCF7008991E1 /* Routers */ = {
 			isa = PBXGroup;
 			children = (
+				CC6D40C2210988DB009B822A /* Router.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -271,6 +291,8 @@
 		CC1CEE3820FEFD01008991E1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CC6D40C421098913009B822A /* ProductAPI.swift */,
+				CC6D40C521098913009B822A /* SessionAPI.swift */,
 				CC1CEE4020FEFD36008991E1 /* APIError.swift */,
 				CC1CEE3E20FEFD36008991E1 /* JSONResponse.swift */,
 				CC1CEE3D20FEFD36008991E1 /* Response.swift */,
@@ -285,6 +307,16 @@
 				CC1CEE4820FF332A008991E1 /* Login.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CC6D40BB2109878D009B822A /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				CC6D40BC210987B2009B822A /* BuyForm.swift */,
+				CC6D40BD210987B2009B822A /* LoginForm.swift */,
+				CC6D40BE210987B2009B822A /* RegisterForm.swift */,
+			);
+			path = Forms;
 			sourceTree = "<group>";
 		};
 		EDCFCCC05817796E2F139846 /* Pods */ = {
@@ -536,21 +568,29 @@
 			files = (
 				CC1CEE4B20FF3397008991E1 /* LoginViewController.swift in Sources */,
 				CC1CEDF120FDF48B008991E1 /* LoginApp.xcdatamodeld in Sources */,
+				CC6D40C3210988DB009B822A /* Router.swift in Sources */,
 				CC1CEE3520FEFCC3008991E1 /* Protocol.swift in Sources */,
 				CC1CEE1D20FEDDCB008991E1 /* BaseViewController.swift in Sources */,
 				CC1CEE512101978B008991E1 /* RegisterViewController.swift in Sources */,
+				CC6D40C92109C25E009B822A /* SessionManager.swift in Sources */,
 				CC1CEE4220FEFD37008991E1 /* Response.swift in Sources */,
+				CC6D40C721098913009B822A /* SessionAPI.swift in Sources */,
 				CC1CEE2120FEF548008991E1 /* Constant.swift in Sources */,
 				CC1CEE3120FEFCC3008991E1 /* Checkout.swift in Sources */,
 				CC1CEE2620FEF61A008991E1 /* CustomView.swift in Sources */,
 				CC1CEE3420FEFCC3008991E1 /* Product.swift in Sources */,
 				CC1CEE2220FEF548008991E1 /* Theme.swift in Sources */,
 				CC1CEDEB20FDF48B008991E1 /* ViewController.swift in Sources */,
+				CC6D40C0210987B2009B822A /* LoginForm.swift in Sources */,
 				CC1CEDE920FDF48A008991E1 /* AppDelegate.swift in Sources */,
+				CC6D40C1210987B2009B822A /* RegisterForm.swift in Sources */,
+				CC6D40C621098913009B822A /* ProductAPI.swift in Sources */,
 				CC1CEE4520FEFD37008991E1 /* APIError.swift in Sources */,
+				CC6D40BA21082E82009B822A /* APIController.swift in Sources */,
 				CE6B6A8721078AEC0024C715 /* MyGithub.swift in Sources */,
 				CC1CEE4320FEFD37008991E1 /* JSONResponse.swift in Sources */,
 				CC1CEE3620FEFCC3008991E1 /* SessionToken.swift in Sources */,
+				CC6D40BF210987B2009B822A /* BuyForm.swift in Sources */,
 				CC1CEE3220FEFCC3008991E1 /* OMGError.swift in Sources */,
 				CC1CEE2720FEF61A008991E1 /* Extension.swift in Sources */,
 				CC1CEE3320FEFCC3008991E1 /* Paginator.swift in Sources */,

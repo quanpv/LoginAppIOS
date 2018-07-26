@@ -31,12 +31,19 @@ class LoginViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     @IBAction func tapLoginBtn(_ sender: UIButton) {
         let text: String = (emailTF?.text?.description)!
         print("login btn clicked:\(text)")
         emailTF?.text = "quanpv.hut@gmail.com"
-        requestHttp("https://api.github.com/users/quanpv");
+//        requestHttp("https://api.github.com/users/quanpv")
+        getInformationGitHub("https://api.github.com/users/quanpv") {
+            response in print(response.avatarUrl?.absoluteString.description ?? "")
+        }
+    }
+    
+    
+    func getInformationGitHub(_ url:String,  completionClosure: @escaping ObjectClosure<MyGithub>) {
+        APIController.requestHttp(url,  completionClosure: completionClosure)
     }
     
     func requestHttp(_ url:String) {
@@ -45,11 +52,11 @@ class LoginViewController: BaseViewController {
             switch data.result {
             case let .success(data):
                 do {
-                     let jsonDecoder = JSONDecoder()
-                    let gitData = try jsonDecoder.decode(MyGitHub.self, from: data)
+                    let jsonDecoder = JSONDecoder()
+                    let gitData = try jsonDecoder.decode(MyGithub.self, from: data)
                     print(gitData.name ?? "--")
                     print("Repo:\(gitData.repos ?? 0)")
-                     print("Location:\(gitData.location ?? "NULL")")
+                    print("Location:\(gitData.location ?? "NULL")")
                 } catch let error {
                     print(error.localizedDescription)
                 }
@@ -71,6 +78,7 @@ class LoginViewController: BaseViewController {
     */
 
 }
+
 extension LoginViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if !self.scrollView.tpKeyboardAvoiding_focusNextTextField() {

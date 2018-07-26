@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct MyGitHub: Codable {
+struct MyGithub: Codable {
     let name: String?
     let location: String?
     let followers: Int?
