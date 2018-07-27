@@ -11,7 +11,9 @@ import TPKeyboardAvoiding
 import Alamofire
 
 class LoginViewController: BaseViewController {
-
+    let viewModel: LoginViewModel = LoginViewModel()
+    
+    
     @IBOutlet var passwordTF: OMGFloatingTextField!
     @IBOutlet var emailTF: OMGFloatingTextField!
     @IBOutlet var scrollView: TPKeyboardAvoidingScrollView!
@@ -29,6 +31,23 @@ class LoginViewController: BaseViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func configureView() {
+        super.configureView()
+        self.emailTF.placeholder = self.viewModel.emailPlaceholder
+        self.passwordTF.placeholder = self.viewModel.passwordPlaceholder
+        self.loginBtn.setTitle(self.viewModel.loginButtonTitle, for: .normal)
+        self.registerBtn.setTitle(self.viewModel.registerButtonTitle, for: .normal)
+    }
+    
+    override func configureViewModel() {
+        super.configureViewModel()
+        self.viewModel.updateEmailValidation = { self.emailTF.errorMessage = $0 }
+        self.viewModel.updatePasswordValidation = { self.passwordTF.errorMessage = $0 }
+        self.viewModel.onLoadStateChange = { $0 ? self.showLoading() : self.hideLoading() }
+        self.viewModel.onSuccessLogin = { (UIApplication.shared.delegate as? AppDelegate)?.loadRootView() }
+        self.viewModel.onFailedLogin = { self.showError(withMessage: $0.localizedDescription) }
     }
     
     @IBAction func tapLoginBtn(_ sender: UIButton) {
