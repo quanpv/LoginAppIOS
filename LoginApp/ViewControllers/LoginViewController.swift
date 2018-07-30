@@ -46,7 +46,7 @@ class LoginViewController: BaseViewController {
         self.viewModel.updateEmailValidation = { self.emailTF.errorMessage = $0 }
         self.viewModel.updatePasswordValidation = { self.passwordTF.errorMessage = $0 }
         self.viewModel.onLoadStateChange = { $0 ? self.showLoading() : self.hideLoading() }
-        self.viewModel.onSuccessLogin = { (UIApplication.shared.delegate as? AppDelegate)?.loadRootView() }
+        self.viewModel.onSuccessLogin = {/* (UIApplication.shared.delegate as? AppDelegate)?.loadRootView() */ print("login success")}
         self.viewModel.onFailedLogin = { self.showError(withMessage: $0.localizedDescription) }
     }
     
@@ -55,9 +55,10 @@ class LoginViewController: BaseViewController {
         print("login btn clicked:\(text)")
         emailTF?.text = "quanpv.hut@gmail.com"
 //        requestHttp("https://api.github.com/users/quanpv")
-        getInformationGitHub("https://api.github.com/users/quanpv") {
-            response in print(response.avatarUrl?.absoluteString.description ?? "")
-        }
+//        getInformationGitHub("https://api.github.com/users/quanpv") {
+//            response in print(response.avatarUrl?.absoluteString.description ?? "")
+//        }
+        self.viewModel.login();
     }
     
     
@@ -113,10 +114,10 @@ extension LoginViewController: UITextFieldDelegate {
         let textFieldText: NSString = (textField.text ?? "") as NSString
         let textAfterUpdate = textFieldText.replacingCharacters(in: range, with: string)
         switch textField {
-        case self.emailTF: print("email1:\(textAfterUpdate)")
-        case self.passwordTF: print("password1:\(textAfterUpdate)")
-            //        case self.emailTF: self.viewModel.email = textAfterUpdate
-        //        case self.passwordTF self.viewModel.password = textAfterUpdate
+//        case self.emailTF: print("email1:\(textAfterUpdate)")
+//        case self.passwordTF: print("password1:\(textAfterUpdate)")
+        case self.emailTF: self.viewModel.email = textAfterUpdate
+        case self.passwordTF: self.viewModel.password = textAfterUpdate
         default: break
         }
         return true
