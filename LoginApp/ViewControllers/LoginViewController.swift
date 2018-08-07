@@ -46,7 +46,7 @@ class LoginViewController: BaseViewController {
         self.viewModel.updateEmailValidation = { self.emailTF.errorMessage = $0 }
         self.viewModel.updatePasswordValidation = { self.passwordTF.errorMessage = $0 }
         self.viewModel.onLoadStateChange = { $0 ? self.showLoading() : self.hideLoading() }
-        self.viewModel.onSuccessLogin = {/* (UIApplication.shared.delegate as? AppDelegate)?.loadRootView() */ print("login success")}
+        self.viewModel.onSuccessLogin = {(UIApplication.shared.delegate as? AppDelegate)?.loadRootView() /*print("login success")*/}
         self.viewModel.onFailedLogin = { self.showError(withMessage: $0.localizedDescription) }
     }
     

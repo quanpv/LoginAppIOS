@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		12F2A5E3F18972FA3D76AD34 /* Pods_LoginAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D249684256C333F91E3EAB07 /* Pods_LoginAppTests.framework */; };
 		19B8E1469FBD600C4441BB0F /* Pods_LoginAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDEABAF200B85092C699FE79 /* Pods_LoginAppUITests.framework */; };
+		CC1A1CEC2119459F00421518 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1A1CEB2119459F00421518 /* ProductListViewModel.swift */; };
+		CC1A1CEE2119928800421518 /* ProductCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1A1CED2119928800421518 /* ProductCellViewModel.swift */; };
 		CC1CEDE920FDF48A008991E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEDE820FDF48A008991E1 /* AppDelegate.swift */; };
 		CC1CEDEB20FDF48B008991E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEDEA20FDF48B008991E1 /* ViewController.swift */; };
 		CC1CEDEE20FDF48B008991E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1CEDEC20FDF48B008991E1 /* Main.storyboard */; };
@@ -74,6 +76,8 @@
 		B47B74A301201579FF8FD4F7 /* Pods-LoginAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginAppUITests/Pods-LoginAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC4574559030A5E34F31837C /* Pods-LoginApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginApp/Pods-LoginApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BFF468BFCCD8891F94507416 /* Pods-LoginApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginApp/Pods-LoginApp.release.xcconfig"; sourceTree = "<group>"; };
+		CC1A1CEB2119459F00421518 /* ProductListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		CC1A1CED2119928800421518 /* ProductCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCellViewModel.swift; sourceTree = "<group>"; };
 		CC1CEDE520FDF48A008991E1 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC1CEDE820FDF48A008991E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC1CEDEA20FDF48B008991E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -239,6 +243,8 @@
 			children = (
 				CC6D40CA210B08FC009B822A /* BaseViewModel.swift */,
 				CC6D40CC210B093E009B822A /* LoginViewModel.swift */,
+				CC1A1CEB2119459F00421518 /* ProductListViewModel.swift */,
+				CC1A1CED2119928800421518 /* ProductCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -574,6 +580,7 @@
 			files = (
 				CC1CEE4B20FF3397008991E1 /* LoginViewController.swift in Sources */,
 				CC1CEDF120FDF48B008991E1 /* LoginApp.xcdatamodeld in Sources */,
+				CC1A1CEE2119928800421518 /* ProductCellViewModel.swift in Sources */,
 				CC6D40C3210988DB009B822A /* Router.swift in Sources */,
 				CC1CEE3520FEFCC3008991E1 /* Protocol.swift in Sources */,
 				CC1CEE1D20FEDDCB008991E1 /* BaseViewController.swift in Sources */,
@@ -586,6 +593,7 @@
 				CC1CEE3120FEFCC3008991E1 /* Checkout.swift in Sources */,
 				CC1CEE2620FEF61A008991E1 /* CustomView.swift in Sources */,
 				CC1CEE3420FEFCC3008991E1 /* Product.swift in Sources */,
+				CC1A1CEC2119459F00421518 /* ProductListViewModel.swift in Sources */,
 				CC1CEE2220FEF548008991E1 /* Theme.swift in Sources */,
 				CC1CEDEB20FDF48B008991E1 /* ViewController.swift in Sources */,
 				CC6D40C0210987B2009B822A /* LoginForm.swift in Sources */,
