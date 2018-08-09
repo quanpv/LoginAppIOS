@@ -13,6 +13,8 @@
 		CC1A1CEE2119928800421518 /* ProductCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1A1CED2119928800421518 /* ProductCellViewModel.swift */; };
 		CC1A1CF4211A99A500421518 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1A1CF2211A99A500421518 /* ProductTableViewCell.swift */; };
 		CC1A1CF5211A99A500421518 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC1A1CF3211A99A500421518 /* ProductTableViewCell.xib */; };
+		CC1A1CF7211BFB7B00421518 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1A1CF6211BFB7B00421518 /* ProductListViewController.swift */; };
+		CC1A1CFB211C406300421518 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1A1CFA211C406300421518 /* Product.storyboard */; };
 		CC1CEDE920FDF48A008991E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEDE820FDF48A008991E1 /* AppDelegate.swift */; };
 		CC1CEDEB20FDF48B008991E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEDEA20FDF48B008991E1 /* ViewController.swift */; };
 		CC1CEDEE20FDF48B008991E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1CEDEC20FDF48B008991E1 /* Main.storyboard */; };
@@ -82,6 +84,8 @@
 		CC1A1CED2119928800421518 /* ProductCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCellViewModel.swift; sourceTree = "<group>"; };
 		CC1A1CF2211A99A500421518 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		CC1A1CF3211A99A500421518 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		CC1A1CF6211BFB7B00421518 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		CC1A1CFA211C406300421518 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
 		CC1CEDE520FDF48A008991E1 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC1CEDE820FDF48A008991E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC1CEDEA20FDF48B008991E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -256,6 +260,7 @@
 				CC1CEE1C20FEDDCB008991E1 /* BaseViewController.swift */,
 				CC1CEE4A20FF3397008991E1 /* LoginViewController.swift */,
 				CC1CEE502101978B008991E1 /* RegisterViewController.swift */,
+				CC1A1CF6211BFB7B00421518 /* ProductListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -339,6 +344,7 @@
 			children = (
 				CC1CEE4E21009B32008991E1 /* Register.storyboard */,
 				CC1CEE4820FF332A008991E1 /* Login.storyboard */,
+				CC1A1CFA211C406300421518 /* Product.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -479,6 +485,7 @@
 			files = (
 				CC1CEDF620FDF48B008991E1 /* LaunchScreen.storyboard in Resources */,
 				CC1CEE2920FEFB55008991E1 /* Localizable.strings in Resources */,
+				CC1A1CFB211C406300421518 /* Product.storyboard in Resources */,
 				CC1CEDF320FDF48B008991E1 /* Assets.xcassets in Resources */,
 				CC1A1CF5211A99A500421518 /* ProductTableViewCell.xib in Resources */,
 				CC1CEE4920FF332A008991E1 /* Login.storyboard in Resources */,
@@ -619,6 +626,7 @@
 				CC1A1CEC2119459F00421518 /* ProductListViewModel.swift in Sources */,
 				CC1CEE2220FEF548008991E1 /* Theme.swift in Sources */,
 				CC1CEDEB20FDF48B008991E1 /* ViewController.swift in Sources */,
+				CC1A1CF7211BFB7B00421518 /* ProductListViewController.swift in Sources */,
 				CC6D40C0210987B2009B822A /* LoginForm.swift in Sources */,
 				CC1CEDE920FDF48A008991E1 /* AppDelegate.swift in Sources */,
 				CC6D40C1210987B2009B822A /* RegisterForm.swift in Sources */,

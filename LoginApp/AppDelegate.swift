@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         case .loading:
             self.window?.rootViewController = Storyboard.loading.storyboard.instantiateInitialViewController()
         case .login:
+            print("Login success")
             self.window?.rootViewController = Storyboard.product.storyboard.instantiateInitialViewController()
         }
     }

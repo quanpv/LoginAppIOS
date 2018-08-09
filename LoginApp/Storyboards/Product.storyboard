@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8w3-da-Dps">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="tq6-vK-QzK">
+            <objects>
+                <navigationController id="MUW-HJ-Cl1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s9p-OW-EVf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8w3-da-Dps" kind="relationship" relationship="rootViewController" id="afY-aL-jFf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZJ-51-Bb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1201" y="-29"/>
+        </scene>
+        <!--Product List View Controller-->
+        <scene sceneID="ec1-y1-9mt">
+            <objects>
+                <viewController storyboardIdentifier="ProductListViewController" id="8w3-da-Dps" customClass="ProductListViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lGm-Ue-hfy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8MV-Nr-KMK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8w3-da-Dps" id="fIg-7d-gkf"/>
+                                    <outlet property="delegate" destination="8w3-da-Dps" id="A6y-6w-zGw"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CWz-0h-0D2" firstAttribute="bottom" secondItem="8MV-Nr-KMK" secondAttribute="bottom" id="PXq-GO-s7Y"/>
+                            <constraint firstItem="8MV-Nr-KMK" firstAttribute="leading" secondItem="CWz-0h-0D2" secondAttribute="leading" id="Srk-ld-5gj"/>
+                            <constraint firstItem="CWz-0h-0D2" firstAttribute="trailing" secondItem="8MV-Nr-KMK" secondAttribute="trailing" id="Y8e-bp-OLb"/>
+                            <constraint firstItem="8MV-Nr-KMK" firstAttribute="top" secondItem="CWz-0h-0D2" secondAttribute="top" id="zJY-Za-RdC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CWz-0h-0D2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Td4-AC-n4X">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="profile_icon" id="YUO-ut-mef"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="qr_icon" id="O0k-Bx-BSg"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="8MV-Nr-KMK" id="4l9-tg-rYa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KkI-JV-bOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-284" y="-45"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile_icon" width="25" height="25"/>
+        <image name="qr_icon" width="25" height="25"/>
+    </resources>
+</document>
