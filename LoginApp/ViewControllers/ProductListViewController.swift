@@ -82,13 +82,14 @@ extension ProductListViewController: UITableViewDataSource {
 
 extension ProductListViewController: UITableViewDelegate {
     func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let product = self.viewModel.productCellViewModel(at: indexPath).product
-        self.performSegue(withIdentifier: self.showCheckoutViewControllerSegueIdentifer, sender: product)
+//        let product = self.viewModel.productCellViewModel(at: indexPath).product
+//        self.performSegue(withIdentifier: self.showCheckoutViewControllerSegueIdentifer, sender: product)
     }
 }
 
 extension ProductListViewController: ProductTableViewCellDelegate {
     func didTapBuy(forProduct product: Product) {
-        self.performSegue(withIdentifier: self.showCheckoutViewControllerSegueIdentifer, sender: product)
+        print("Product:\(product.imageURL)")
+//        self.performSegue(withIdentifier: self.showCheckoutViewControllerSegueIdentifer, sender: product)
     }
 }

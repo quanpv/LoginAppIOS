@@ -47,6 +47,9 @@ class ProductTableViewCell: UITableViewCell {
         super.layoutSubviews()
         self.priceButton.layer.borderColor = Color.omiseGOBlue.cgColor()
         self.priceButton.layer.borderWidth = 1
+        self.priceButton.layer.cornerRadius = 5
+        self.productImageView.layer.cornerRadius = 10
+        self.productImageView.clipsToBounds = true
     }
 
     @IBAction func didTapBuyButton(_ sender: UIButton) {

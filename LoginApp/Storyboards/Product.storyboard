@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8w3-da-Dps">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MUW-HJ-Cl1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,15 +18,18 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iWI-RW-XKA">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
-                        <segue destination="8w3-da-Dps" kind="relationship" relationship="rootViewController" id="afY-aL-jFf"/>
+                        <segue destination="8w3-da-Dps" kind="relationship" relationship="rootViewController" id="gIQ-51-vgw"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZJ-51-Bb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1201" y="-29"/>
         </scene>
-        <!--Product List View Controller-->
+        <!--Products-->
         <scene sceneID="ec1-y1-9mt">
             <objects>
                 <viewController storyboardIdentifier="ProductListViewController" id="8w3-da-Dps" customClass="ProductListViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -52,7 +55,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CWz-0h-0D2"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Td4-AC-n4X">
+                    <navigationItem key="navigationItem" title="Products" id="Td4-AC-n4X">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="profile_icon" id="YUO-ut-mef"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="qr_icon" id="O0k-Bx-BSg"/>
                     </navigationItem>
