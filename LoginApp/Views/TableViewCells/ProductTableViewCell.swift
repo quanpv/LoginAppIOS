@@ -48,7 +48,7 @@ class ProductTableViewCell: UITableViewCell {
         self.priceButton.layer.borderColor = Color.omiseGOBlue.cgColor()
         self.priceButton.layer.borderWidth = 1
         self.priceButton.layer.cornerRadius = 5
-        self.productImageView.layer.cornerRadius = 10
+        self.productImageView.layer.cornerRadius = self.productImageView.frame.size.width/2
         self.productImageView.clipsToBounds = true
     }
 

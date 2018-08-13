@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PIL-6Q-vHf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loading View Controller-->
+        <scene sceneID="eV5-QW-f0h">
+            <objects>
+                <viewController id="PIL-6Q-vHf" customClass="LoadingViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W1B-l5-ZFr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omisego_logo_black" translatesAutoresizingMaskIntoConstraints="NO" id="4z1-rD-vNb">
+                                <rect key="frame" x="57" y="298" width="260" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="mdf-qD-Haf"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="0Kq-6j-OAX">
+                                <rect key="frame" x="169" y="421" width="37" height="37"/>
+                                <color key="color" red="0.13658942830000001" green="0.32037645139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNN-5r-Jm0">
+                                <rect key="frame" x="20" y="417.5" width="335" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="AA5-Mv-Z2q"/>
+                                </constraints>
+                                <state key="normal" title="Retry"/>
+                                <connections>
+                                    <action selector="tapRetry" destination="PIL-6Q-vHf" eventType="touchUpInside" id="vod-P3-frz"/>
+                                    <action selector="tapRetry:" destination="PIL-6Q-vHf" eventType="touchUpInside" id="nNh-bf-mLk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WNN-5r-Jm0" firstAttribute="centerX" secondItem="0Kq-6j-OAX" secondAttribute="centerX" id="2yt-Hd-DCD"/>
+                            <constraint firstItem="4z1-rD-vNb" firstAttribute="centerX" secondItem="PwR-lO-POQ" secondAttribute="centerX" id="F3t-t4-Vff"/>
+                            <constraint firstItem="WNN-5r-Jm0" firstAttribute="centerY" secondItem="0Kq-6j-OAX" secondAttribute="centerY" id="G79-kW-lzc"/>
+                            <constraint firstItem="4z1-rD-vNb" firstAttribute="centerY" secondItem="PwR-lO-POQ" secondAttribute="centerY" id="SbU-e4-0UO"/>
+                            <constraint firstItem="PwR-lO-POQ" firstAttribute="trailing" secondItem="WNN-5r-Jm0" secondAttribute="trailing" constant="20" id="a8f-PK-urA"/>
+                            <constraint firstItem="0Kq-6j-OAX" firstAttribute="top" secondItem="4z1-rD-vNb" secondAttribute="bottom" constant="32" id="nVX-aY-QSv"/>
+                            <constraint firstItem="WNN-5r-Jm0" firstAttribute="leading" secondItem="PwR-lO-POQ" secondAttribute="leading" constant="20" id="smJ-jR-fjx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PwR-lO-POQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="0Kq-6j-OAX" id="NOc-qq-c3a"/>
+                        <outlet property="retryButton" destination="WNN-5r-Jm0" id="e0a-bH-IQo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06K-BM-TJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265" y="81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="omisego_logo_black" width="260" height="91"/>
+    </resources>
+</document>

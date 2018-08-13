@@ -53,7 +53,7 @@ class LoginViewController: BaseViewController {
     @IBAction func tapLoginBtn(_ sender: UIButton) {
         let text: String = (emailTF?.text?.description)!
         print("login btn clicked:\(text)")
-        emailTF?.text = "quanpv.hut@gmail.com"
+//        emailTF?.text = "quanpv.hut@gmail.com"
 //        requestHttp("https://api.github.com/users/quanpv")
 //        getInformationGitHub("https://api.github.com/users/quanpv") {
 //            response in print(response.avatarUrl?.absoluteString.description ?? "")
