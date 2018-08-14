@@ -61,11 +61,27 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="8MV-Nr-KMK" id="4l9-tg-rYa"/>
+                        <segue destination="6TW-jd-0tw" kind="show" id="oJC-vx-nbd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KkI-JV-bOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-284" y="-45"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="u8K-Xh-VTz">
+            <objects>
+                <viewController id="6TW-jd-0tw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zuu-B1-7aE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9x4-pk-wRX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="epc-wd-MPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="495" y="-45"/>
         </scene>
     </scenes>
     <resources>

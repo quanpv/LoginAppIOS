@@ -18,6 +18,9 @@
 		CC1A1CFF212166FC00421518 /* Loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1A1CFE212166FC00421518 /* Loading.storyboard */; };
 		CC1A1D012121688900421518 /* LoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1A1D002121688900421518 /* LoadingViewModel.swift */; };
 		CC1A1D0321217AEB00421518 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1A1D0221217AEB00421518 /* LoadingViewController.swift */; };
+		CC1A1D052122E5AB00421518 /* CheckoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1A1D042122E5AA00421518 /* CheckoutViewModel.swift */; };
+		CC1A1D072122E64700421518 /* OmiseGOWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1A1D062122E64600421518 /* OmiseGOWrapper.swift */; };
+		CC1A1D092122EA0800421518 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1A1D082122EA0700421518 /* TokenManager.swift */; };
 		CC1CEDE920FDF48A008991E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEDE820FDF48A008991E1 /* AppDelegate.swift */; };
 		CC1CEDEB20FDF48B008991E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEDEA20FDF48B008991E1 /* ViewController.swift */; };
 		CC1CEDEE20FDF48B008991E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1CEDEC20FDF48B008991E1 /* Main.storyboard */; };
@@ -92,6 +95,9 @@
 		CC1A1CFE212166FC00421518 /* Loading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Loading.storyboard; sourceTree = "<group>"; };
 		CC1A1D002121688900421518 /* LoadingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewModel.swift; sourceTree = "<group>"; };
 		CC1A1D0221217AEB00421518 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		CC1A1D042122E5AA00421518 /* CheckoutViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewModel.swift; sourceTree = "<group>"; };
+		CC1A1D062122E64600421518 /* OmiseGOWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmiseGOWrapper.swift; sourceTree = "<group>"; };
+		CC1A1D082122EA0700421518 /* TokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		CC1CEDE520FDF48A008991E1 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC1CEDE820FDF48A008991E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC1CEDEA20FDF48B008991E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -280,6 +286,7 @@
 				CC1A1CEB2119459F00421518 /* ProductListViewModel.swift */,
 				CC1A1CED2119928800421518 /* ProductCellViewModel.swift */,
 				CC1A1D002121688900421518 /* LoadingViewModel.swift */,
+				CC1A1D042122E5AA00421518 /* CheckoutViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -300,6 +307,8 @@
 				CC6D40C82109C25E009B822A /* SessionManager.swift */,
 				CC1CEE1F20FEF548008991E1 /* Constant.swift */,
 				CC1CEE2020FEF548008991E1 /* Theme.swift */,
+				CC1A1D062122E64600421518 /* OmiseGOWrapper.swift */,
+				CC1A1D082122EA0700421518 /* TokenManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -649,11 +658,14 @@
 				CC1CEE4320FEFD37008991E1 /* JSONResponse.swift in Sources */,
 				CC6D40CB210B08FC009B822A /* BaseViewModel.swift in Sources */,
 				CC1CEE3620FEFCC3008991E1 /* SessionToken.swift in Sources */,
+				CC1A1D072122E64700421518 /* OmiseGOWrapper.swift in Sources */,
 				CC6D40BF210987B2009B822A /* BuyForm.swift in Sources */,
 				CC1A1CF4211A99A500421518 /* ProductTableViewCell.swift in Sources */,
+				CC1A1D092122EA0800421518 /* TokenManager.swift in Sources */,
 				CC1CEE3220FEFCC3008991E1 /* OMGError.swift in Sources */,
 				CC1CEE2720FEF61A008991E1 /* Extension.swift in Sources */,
 				CC1CEE3320FEFCC3008991E1 /* Paginator.swift in Sources */,
+				CC1A1D052122E5AB00421518 /* CheckoutViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
